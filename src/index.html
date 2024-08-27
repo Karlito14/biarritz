@@ -16,7 +16,7 @@
     />
     <title>Biarritz</title>
   </head>
-  <body class="min-h-screen bg-stone-100 p-8">
+  <body class="min-h-screen bg-stone-100 p-8 text-slate-950">
     <div class="container mx-auto rounded-xl bg-stone-200">
         <header class="flex bg-white items-center rounded-t-xl p-6 border-b">
             <img src="./assets/logo.png" alt="logo" class="w-6 mr-3">
@@ -26,6 +26,38 @@
             <section class="bg-white p-6">
                 <a href="#" class="font-bold cursor-pointer text-sm delay-150 hover:text-blue-500"><span class="mr-4"><i class="fa-solid fa-angle-left"></i></span>Retour à la liste</a>
                 <h2 class="font-bold mt-6 mb-4 text-lg">Moyen de paiement</h2>
+                <div class="border p-4 rounded-lg">
+                    <h3 class="font-bold text-sm mb-4">Cartes sauvegardées</h3>
+                    <div class="grid grid-cols-2 gap-2">
+                        <label for="paypal" class="border rounded-lg grid grid-cols-[25px_1fr_15px] p-4 cursor-pointer hover:bg-sky-500 group">
+                            <i class="fa-brands fa-paypal text-sky-500 mr-3 group-hover:text-white transition-colors"></i>
+                            <div class="text-sm">
+                                <p class="font-bold group-hover:text-white transition-colors">Paypal finissant par 1234</p>
+                                <small class="text-stone-500 text-xs group-hover:text-white transition-colors">Expire le 08/26</small>
+                            </div>
+                            <input type="radio" id="paypal" name="payment" value="paypal">
+                        </label>
+                        <label for="mastercard" class="border rounded-lg grid grid-cols-[25px_1fr_15px] p-4 cursor-pointer hover:bg-orange-400 group">
+                            <i class="fa-brands fa-cc-mastercard text-orange-500 group-hover:text-white transition-colors"></i>
+                            <div class="text-sm">
+                                <p class="font-bold group-hover:text-white transition-colors">Carte finissant par 1234</p>
+                                <small class="text-stone-500 text-xs group-hover:text-white transition-colors">Expire le 08/26</small>
+                            </div>
+                            <input type="radio" id="mastercard" name="payment" value="mastercard">
+                        </label>
+                        <label for="visa" class="border rounded-lg grid grid-cols-[25px_1fr_15px] p-4 cursor-pointer hover:bg-blue-500 group">
+                            <i class="fa-brands fa-cc-visa text-blue-500 group-hover:text-white transition-colors"></i>
+                            <div class="text-sm">
+                                <p class="font-bold group-hover:text-white transition-colors">Carte finissant par 1234</p>
+                                <small class="text-stone-500 text-xs group-hover:text-white transition-colors">Expire le 08/26</small>
+                            </div>
+                            <input type="radio" id="visa" name="payment" value="visa">
+                        </label>
+                        <div class="flex justify-center border rounded-lg items-center cursor-pointer hover:bg-blue-500 group">
+                            <p class="text-blue-500 font-bold group-hover:text-white transition-colors"><i class="fa-solid fa-circle-plus mr-2"></i> Ajouter une carte</p>
+                        </div>
+                    </div>
+                </div>
             </div>
             <section></section>
         </div>
