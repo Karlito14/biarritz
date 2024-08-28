@@ -16,63 +16,180 @@
     />
     <title>Biarritz</title>
   </head>
-  <body class="min-h-screen bg-stone-100 p-8 text-slate-950">
-    <div class="container mx-auto rounded-xl bg-stone-200">
-        <header class="flex bg-white items-center rounded-t-xl p-6 border-b">
-            <img src="./assets/logo.png" alt="logo" class="w-6 mr-3">
-            <h1 class="pt-1 font-bold text-2xl">Biarritz Palace</h1>
-        </header>
-        <main class="grid grid-cols-[2fr_1fr]">
-            <section class="bg-white p-6">
-                <a href="#" class="font-bold cursor-pointer text-sm delay-150 hover:text-blue-500"><span class="mr-4"><i class="fa-solid fa-angle-left"></i></span>Retour à la liste</a>
-                <h2 class="font-bold mt-6 mb-4 text-lg">Moyen de paiement</h2>
-                <div class="border p-4 rounded-lg">
-                    <h3 class="font-bold text-sm mb-4">Cartes sauvegardées</h3>
-                    <div class="grid grid-cols-2 gap-2">
-                        <label for="paypal" class="border rounded-lg grid grid-cols-[25px_1fr_15px] p-4 cursor-pointer hover:bg-sky-500 group">
-                            <i class="fa-brands fa-paypal text-sky-500 mr-3 group-hover:text-white transition-colors"></i>
-                            <div class="text-sm">
-                                <p class="font-bold group-hover:text-white transition-colors">Paypal finissant par 1234</p>
-                                <small class="text-stone-500 text-xs group-hover:text-white transition-colors">Expire le 08/26</small>
-                            </div>
-                            <input type="radio" id="paypal" name="payment" value="paypal">
-                        </label>
-                        <label for="mastercard" class="border rounded-lg grid grid-cols-[25px_1fr_15px] p-4 cursor-pointer hover:bg-orange-400 group">
-                            <i class="fa-brands fa-cc-mastercard text-orange-500 group-hover:text-white transition-colors"></i>
-                            <div class="text-sm">
-                                <p class="font-bold group-hover:text-white transition-colors">Carte finissant par 1234</p>
-                                <small class="text-stone-500 text-xs group-hover:text-white transition-colors">Expire le 08/26</small>
-                            </div>
-                            <input type="radio" id="mastercard" name="payment" value="mastercard">
-                        </label>
-                        <label for="visa" class="border rounded-lg grid grid-cols-[25px_1fr_15px] p-4 cursor-pointer hover:bg-blue-500 group">
-                            <i class="fa-brands fa-cc-visa text-blue-500 group-hover:text-white transition-colors"></i>
-                            <div class="text-sm">
-                                <p class="font-bold group-hover:text-white transition-colors">Carte finissant par 1234</p>
-                                <small class="text-stone-500 text-xs group-hover:text-white transition-colors">Expire le 08/26</small>
-                            </div>
-                            <input type="radio" id="visa" name="payment" value="visa">
-                        </label>
-                        <div class="flex justify-center border rounded-lg items-center cursor-pointer hover:bg-blue-500 group">
-                            <p class="text-blue-500 font-bold group-hover:text-white transition-colors"><i class="fa-solid fa-circle-plus mr-2"></i> Ajouter une carte</p>
-                        </div>
-                    </div>
+  <body class="min-h-screen bg-stone-50 p-8 text-slate-950">
+    <div class="container mx-auto rounded-xl bg-stone-100">
+      <header class="flex items-center rounded-t-xl border-b bg-white p-6">
+        <img src="./assets/logo.png" alt="logo" class="mr-3 w-6" />
+        <h1 class="pt-1 text-2xl font-bold">Biarritz Palace</h1>
+      </header>
+      <main class="grid grid-cols-[2fr_1fr]">
+        <section class="bg-white p-6">
+          <a
+            href="#"
+            class="cursor-pointer text-sm font-bold delay-150 hover:text-blue-500"
+            ><span class="mr-4"><i class="fa-solid fa-angle-left"></i></span
+            >Retour à la liste</a
+          >
+          <h2 class="mb-4 mt-6 text-lg font-bold">Moyen de paiement</h2>
+          <div class="rounded-lg border p-4">
+            <h3 class="mb-4 text-sm font-bold">Cartes sauvegardées</h3>
+            <div class="grid grid-cols-2 gap-2">
+              <label
+                for="paypal"
+                class="group grid cursor-pointer grid-cols-[25px_1fr_15px] rounded-lg border p-4 hover:bg-sky-500"
+              >
+                <i
+                  class="fa-brands fa-paypal mr-3 text-sky-500 transition-colors group-hover:text-white"
+                ></i>
+                <div class="text-sm">
+                  <p class="font-bold transition-colors group-hover:text-white">
+                    Paypal finissant par 1234
+                  </p>
+                  <small
+                    class="text-xs text-stone-500 transition-colors group-hover:text-white"
+                    >Expire le 08/26</small
+                  >
                 </div>
-                <div class="border px-4 py-6 mt-6 rounded-lg">
-                    <h3 class="font-bold">Politique d'annulation</h3>
-                    <h4 class="text-sm font-medium my-3">Gratuit avant le 30 Novembre 2025</h4>
-                    <p class="mb-4">Après cette date, la réservation n'est pas annulable. <span class="font-bold underline hover:text-blue-500 cursor-pointer transition-colors">Voir les conditions</span></p>
-                    <hr class="mb-4">
-                    <h3 class="font-bold">Règles de la résidence</h3>
-                    <p class="my-3 text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, sunt.</p>
-                    <ul class="list-disc ml-4">
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
-                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
-                    </ul>
+                <input type="radio" id="paypal" name="payment" value="paypal" />
+              </label>
+              <label
+                for="mastercard"
+                class="group grid cursor-pointer grid-cols-[25px_1fr_15px] rounded-lg border p-4 hover:bg-orange-400"
+              >
+                <i
+                  class="fa-brands fa-cc-mastercard text-orange-500 transition-colors group-hover:text-white"
+                ></i>
+                <div class="text-sm">
+                  <p class="font-bold transition-colors group-hover:text-white">
+                    Carte finissant par 1234
+                  </p>
+                  <small
+                    class="text-xs text-stone-500 transition-colors group-hover:text-white"
+                    >Expire le 08/26</small
+                  >
                 </div>
-            </section>
-            <section></section>
+                <input
+                  type="radio"
+                  id="mastercard"
+                  name="payment"
+                  value="mastercard"
+                />
+              </label>
+              <label
+                for="visa"
+                class="group grid cursor-pointer grid-cols-[25px_1fr_15px] rounded-lg border p-4 hover:bg-blue-500"
+              >
+                <i
+                  class="fa-brands fa-cc-visa text-blue-500 transition-colors group-hover:text-white"
+                ></i>
+                <div class="text-sm">
+                  <p class="font-bold transition-colors group-hover:text-white">
+                    Carte finissant par 1234
+                  </p>
+                  <small
+                    class="text-xs text-stone-500 transition-colors group-hover:text-white"
+                    >Expire le 08/26</small
+                  >
+                </div>
+                <input type="radio" id="visa" name="payment" value="visa" />
+              </label>
+              <div
+                class="group flex cursor-pointer items-center justify-center rounded-lg border hover:bg-blue-500"
+              >
+                <p
+                  class="font-bold text-blue-500 transition-colors group-hover:text-white"
+                >
+                  <i class="fa-solid fa-circle-plus mr-2"></i> Ajouter une carte
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-6 rounded-lg border px-4 py-6">
+            <h3 class="font-bold">Politique d'annulation</h3>
+            <h4 class="my-3 text-sm font-medium">
+              Gratuit avant le 30 Novembre 2025
+            </h4>
+            <p class="mb-4">
+              Après cette date, la réservation n'est pas annulable.
+              <span
+                class="cursor-pointer font-bold underline transition-colors hover:text-blue-500"
+                >Voir les conditions</span
+              >
+            </p>
+            <hr class="mb-4" />
+            <h3 class="font-bold">Règles de la résidence</h3>
+            <p class="my-3 text-sm">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor,
+              sunt.
+            </p>
+            <ul class="list-inside list-disc">
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+              <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+            </ul>
+          </div>
+        </section>
+        <section class="p-6">
+          <div
+            class="mb-4 flex h-52 flex-col justify-end rounded-lg bg-[url('./assets/biarritz.jpg')] bg-cover bg-center pb-3"
+          >
+            <div class="px-4 py-1 text-white backdrop-blur">
+              <h2 class="font-bold">Hotel | Palais Biarritz</h2>
+              <p class="text-sm">6 lits &#9679; 2 sdc &#9679; 3 chbrs</p>
+            </div>
+          </div>
+          <h3 class="mb-2 border-b pb-2 font-bold">Résumé de votre commande</h3>
+          <div class="mb-3 flex flex-col gap-y-2 text-sm">
+            <div class="flex justify-between">
+              <p>Arrivée</p>
+              <p class="font-medium">Vendredi 3 Novembre 2025</p>
+            </div>
+            <div class="flex justify-between">
+              <p>Départ</p>
+              <p class="font-medium">Lundi 12 Novembre 2025</p>
+            </div>
+            <div class="flex justify-between">
+              <p>Invités</p>
+              <p class="font-medium">3</p>
+            </div>
+          </div>
+          <h3 class="mb-2 border-b pb-2 font-medium">
+            Détails de la facturation
+          </h3>
+          <div class="mb-3 flex flex-col gap-y-2 text-sm">
+            <div class="flex justify-between">
+              <p>Nombre de nuits</p>
+              <p class="font-medium">8 nuits</p>
+            </div>
+            <div class="flex justify-between">
+              <p>Prix par nuitée</p>
+              <p class="font-medium">$700</p>
+            </div>
+            <div class="flex justify-between">
+              <p>Frais de ménage</p>
+              <p class="font-medium">$1200</p>
+            </div>
+            <div class="mb-2 flex justify-between font-medium">
+              <p>Total</p>
+              <p>$7800</p>
+            </div>
+            <button
+              class="w-full rounded bg-blue-300 py-2 font-bold text-white transition-colors hover:bg-blue-500"
+            >
+              Confirmer et payer $7800
+            </button>
+          </div>
+        </section>
+      </main>
+      <footer class="px-3 py-10">
+        <h2 class="mb-4 font-bold">Biarritz Palace</h2>
+        <div class="flex justify-between text-sm">
+          <p class="text-stone-500">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,
+            consectetur!
+          </p>
+          <p>Copyright © United Nations 2024</p>
         </div>
+      </footer>
     </div>
   </body>
 </html>
