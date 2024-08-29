@@ -1,4 +1,4 @@
-# Biarritz
+# [Biarritz](https://karlito14.github.io/biarritz/)
 
 Biarritz est un prototype d'une page de paiement pour un hotel de luxe réalisé avec **Tailwind**.
 
@@ -11,6 +11,6 @@ Biarritz est un prototype d'une page de paiement pour un hotel de luxe réalisé
 
 Pour tester le projet :
 
-Cloner le dépot github
+Cliquer [ici](https://karlito14.github.io/biarritz/) ou cloner le dépot github
 
 Réalisé par [Carlos Leiroz](https://www.linkedin.com/in/carlos-leiroz/)
