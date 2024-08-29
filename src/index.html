@@ -16,13 +16,13 @@
     />
     <title>Biarritz</title>
   </head>
-  <body class="min-h-screen bg-stone-50 p-8 text-slate-950">
-    <div class="container mx-auto rounded-xl bg-stone-100">
-      <header class="flex items-center rounded-t-xl border-b bg-white p-6">
+  <body class="min-h-screen bg-stone-50 text-slate-950 sm:p-8">
+    <div class="container mx-auto bg-stone-100 sm:rounded-xl">
+      <header class="flex items-center border-b bg-white p-6 sm:rounded-t-xl">
         <img src="./assets/logo.png" alt="logo" class="mr-3 w-6" />
         <h1 class="pt-1 text-2xl font-bold">Biarritz Palace</h1>
       </header>
-      <main class="grid grid-cols-[2fr_1fr]">
+      <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[2fr_1fr]">
         <section class="bg-white p-6">
           <a
             href="#"
@@ -33,7 +33,7 @@
           <h2 class="mb-4 mt-6 text-lg font-bold">Moyen de paiement</h2>
           <div class="rounded-lg border p-4">
             <h3 class="mb-4 text-sm font-bold">Cartes sauvegardées</h3>
-            <div class="grid grid-cols-2 gap-2">
+            <div class="grid grid-cols-1 gap-2 lg:grid-cols-2">
               <label
                 for="paypal"
                 class="group grid cursor-pointer grid-cols-[25px_1fr_15px] rounded-lg border p-4 hover:bg-sky-500"
@@ -94,7 +94,7 @@
                 <input type="radio" id="visa" name="payment" value="visa" />
               </label>
               <div
-                class="group flex cursor-pointer items-center justify-center rounded-lg border hover:bg-blue-500"
+                class="group flex cursor-pointer items-center justify-center rounded-lg border py-1 hover:bg-blue-500"
               >
                 <p
                   class="font-bold text-blue-500 transition-colors group-hover:text-white"
